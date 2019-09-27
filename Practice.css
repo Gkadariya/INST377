@@ -1,0 +1,37 @@
+body{
+    background-color: linen; background-image:url("/Users/Gyan Kadariya/Documents/grunge-halftone.jpg")
+}
+    h1{
+    color:maroon;
+    /* This is single-line comment*/
+    margin-left:40px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: red green blue yellow;
+    text-transform:uppercase;
+}
+.daman{
+    font-size: 20px;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    width: 500px;
+    margin: 50px;
+    padding:50px;
+    background-color:navajowhite;
+    box-sizing: border-box;
+    outline:dotted red 4px;
+    text-align: justify;
+    letter-spacing: 2px;
+    
+}
+#para1{
+    font-family:sans-serif;
+    text-align: center;
+    color:red;
+}
+
+*{
+    text-align: center;
+    color:blue;
+}
