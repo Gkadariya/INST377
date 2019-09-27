@@ -5,7 +5,7 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 </head>
-<body style = "background-color:powderblue; background-image:/Users/Gyan Kadariya/Documents/backgroundpic.jpg">
+<body style = "background-color: skyblue;">
 
 <h1 style="color:blue; font-family:Verdana; text-align:center;">This is a Heading</h1>
 <p style="color:red; font-family:courier;">This is a paragraph.</p>
@@ -13,6 +13,7 @@
 <!---HTML Images-->
 <h2>HTML Images</h2>
 <p>HTML images are defined with the img tag:</p>
+<img src="/Users/Gyan Kadariya/Documents/w3schools.jpg" alt="W3schools"
 
 width="140" height="90">
 <!--HTML Links-->
@@ -111,7 +112,95 @@ dolore maga aliquam erat volutpat. Ut wisi enim ad
 <h2>Chapter 7</h2>
 <p>This contains chapter 7 materials</p>
 
+<h2>Background Image</h2>
+<p style="background-image:url('/Users/Gyan Kadariya/Documents/backgroundpic.jpg'); color:slateblue;">
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for this paragraph.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.</p>
+<style>
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding:5px
+}
+th{
+    text-align: left;
+}
+table tr:nth-child(even){
+    background-color:#eee;
+}
+table th:nth-child(odd){
+    background-color: #fff;
+}
+table th{
+    background-color: black;
+    color:white
+}
+</style>
+<h2>Boardered Table</h2>
+<p>Use the CSS Boarder property to add a border to the table</p>
+<table style="width:100%">
+    <caption>Example Table</caption>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+<h1>This is Javascript</h1>
+<p id="demo">Javascript will change the sytle of an HTML element</p>
 
+<script>
+    function myFunction(){
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color="red";
+        document.getElementById("demo").style.backgroundColor="yellow";
+    }
+</script>
+<button type ="button" onclick="myFunction()"> 
+    Click me man please!</button>
+<script>
+function light(sw){
+    var pic;
+    if (sw == 0){
+        pic = "/Users/Gyan Kadariya/Documents/pic_bulboff.png"
+    } else{
+        pic = "/Users/Gyan Kadariya/Documents/pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src=pic;
+}
+</script>
+<img id="myImage" src="/Users/Gyan Kdariya/Documents/pic_bulboff.png"
+width = "100" height = "180">
+<p>
+<button type="button" onlick="light(1)">Light on</button>
+<button type="button" onclick="light(0)">Light off</button>
+</p>
+<img src ="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+<h2>What Can JavaScript Do?</h2>
+<p id="shit">JavaScript can change HTML Content.</p>
+<button type="button" onclick='document.getElementById
+("shit").innerHTML = "Hello JavaScript!"'>Click Me!</button>
 </body>
 </html>
 
