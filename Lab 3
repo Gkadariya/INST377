@@ -41,6 +41,7 @@
       margin-right:200px;
       margin-left: 200px;
       padding:30px;
+      text-align: center;
     }
   </style>
 </head>
@@ -49,6 +50,7 @@
   <div class="wrapper">
     <div class="head" id="start">
       <h1>Sample Header</h1>
+      <a href="https://examplelink.com">anchor tag to nowhere</a>
     </div>
     <div class="second_container">
       <div class="interior">
